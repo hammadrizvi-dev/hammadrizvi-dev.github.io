@@ -1,79 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Hammad Rizvi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Hammad Rizvi</title>
+  <meta name="description" content="Data Science, SQL, AI Engineering, and Full-Stack projects by Hammad Rizvi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="ambient-glow"></div>
-
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">Hammad<span>.tech</span></a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="projects.html" class="active">Projects</a>
-                <a href="about.html">About & Journey</a>
-                <a href="assets/resume.pdf" target="_blank" class="nav-resume-btn">📄 View CV / Resume</a>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <h1 style="font-size: 2.5rem; margin-bottom: 8px;">Featured Projects & Case Studies</h1>
-        <p style="color: var(--text-muted); margin-bottom: 40px;">Real-world data manipulation, exploratory analysis, and upcoming ML models.</p>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
-
-            <!-- 🟢 PROJECT 1 🟢 -->
-            <div class="card">
-                <span style="font-size: 0.75rem; color: var(--primary); font-weight: 700; text-transform: uppercase;">EDA • Data Mining</span>
-                <h2 style="font-size: 1.4rem; margin: 8px 0 12px 0;">Student Performance Analysis</h2>
-                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">
-                    Comprehensive exploratory analysis evaluating score disparities against demographic drivers. Extracted key variance factors across test groups.
-                </p>
-                <div class="tags" style="margin-bottom: 20px;">
-                    <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Seaborn</span><span class="tag">EDA</span>
-                </div>
-                <a href="https://github.com/hammadrizvi-dev/Data-Science-Journey" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">View Code & Notebook ➔</a>
-            </div>
-
-            <!-- 🟢 PROJECT 2 🟢 -->
-            <div class="card">
-                <span style="font-size: 0.75rem; color: var(--accent-green); font-weight: 700; text-transform: uppercase;">SQL • Analytics</span>
-                <h2 style="font-size: 1.4rem; margin: 8px 0 12px 0;">SQL Business Intelligence Pipelines</h2>
-                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">
-                    Complex multi-table queries utilizing JOINs, CTEs, and Window Functions (RANK, DENSE_RANK) to analyze customer retention and revenue streams.
-                </p>
-                <div class="tags" style="margin-bottom: 20px;">
-                    <span class="tag">Advanced SQL</span><span class="tag">PostgreSQL</span><span class="tag">Tableau</span>
-                </div>
-                <a href="https://github.com/hammadrizvi-dev/Data-Science-Journey" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">Explore Queries ➔</a>
-            </div>
-
-            <!-- 🟢 PROJECT 3 (UPCOMING) 🟢 -->
-            <div class="card">
-                <span style="font-size: 0.75rem; color: var(--secondary); font-weight: 700; text-transform: uppercase;">Upcoming • Machine Learning</span>
-                <h2 style="font-size: 1.4rem; margin: 8px 0 12px 0;">Predictive ML Web App</h2>
-                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">
-                    An end-to-end predictive engine trained on Scikit-Learn models and deployed with an interactive Streamlit user interface.
-                </p>
-                <div class="tags" style="margin-bottom: 20px;">
-                    <span class="tag">Scikit-Learn</span><span class="tag">Streamlit</span><span class="tag">Deployment</span>
-                </div>
-                <span style="color: #64748b; font-size: 0.9rem;">Building in Progress ⏳</span>
-            </div>
-
-            <!-- 💡 TIP: भविष्य में नया प्रोजेक्ट जोड़ने के लिए ऊपर वाले 'card' ब्लॉक को कॉपी करके नीचे पेस्ट कर देना! -->
-
-        </div>
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-dot"></span>hammadrizvi<span>.tech</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle title="Toggle Light/Dark Theme" aria-label="Toggle Theme">☾</button>
+        <a href="mailto:Hammadrizvi346@gmail.com" class="btn btn-primary btn-sm">Get in Touch</a>
+      </div>
     </div>
+  </header>
 
-    <footer>
-        <p>© 2026 Hammad Rizvi • Open for Internships</p>
-    </footer>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Portfolio Archive</span>
+            <h1 class="section-title">All Projects &amp; Active Builds</h1>
+          </div>
+          <div class="filter-bar" role="tablist" aria-label="Filter projects">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="data-sql">Data &amp; SQL</button>
+            <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+            <button class="filter-btn" data-filter="roadmap">Upcoming AI/ML</button>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <!-- SQL-Journey -->
+          <article class="card" data-category="data-sql">
+            <div class="card-meta">
+              <span class="cat-label">SQL · Automated CI</span>
+              <span class="badge-live">CI Passing</span>
+            </div>
+            <h3>SQL-Journey (MySQL &amp; SQLite)</h3>
+            <p>
+              28+ verified SQL problems spanning Joins, Aggregates, CTEs, and Subqueries with Hinglish revision notes and a GitHub Actions CI pipeline that executes every query on push.
+            </p>
+            <div class="tags">
+              <span class="tag">MySQL</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">CTEs</span>
+              <span class="tag">GitHub Actions</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" data-preview="sql-journey">Inspect Preview</button>
+              <a href="https://github.com/hammadrizvi-dev/SQL-Journey" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">View Repo ↗</a>
+            </div>
+          </article>
+
+          <!-- Data-Science-Journey -->
+          <article class="card" data-category="data-sql">
+            <div class="card-meta">
+              <span class="cat-label">Data Science · EDA</span>
+              <span class="badge-live">Active</span>
+            </div>
+            <h3>Data-Science-Journey</h3>
+            <p>
+              Hands-on NumPy, Pandas, Matplotlib &amp; Seaborn visualization labs plus the Student Performance Analysis case study — reorganized with clean relative paths and zero broken notebooks.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Seaborn</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" data-preview="data-science-journey">Inspect Preview</button>
+              <a href="https://github.com/hammadrizvi-dev/Data-Science-Journey" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">View Repo ↗</a>
+            </div>
+          </article>
+
+          <!-- Chatify -->
+          <article class="card" data-category="fullstack">
+            <div class="card-meta">
+              <span class="cat-label">Full-Stack · Real-Time</span>
+              <span class="badge-live">Shipped</span>
+            </div>
+            <h3>Chatify — Real-Time Messaging</h3>
+            <p>
+              MERN + Socket.IO chat platform featuring JWT user authentication, real-time room events, MongoDB persistence, file uploads, and a complete deployment guide.
+            </p>
+            <div class="tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Socket.IO</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" data-preview="chatify">Inspect Preview</button>
+              <a href="https://github.com/hammadrizvi-dev/Chatify" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">View Repo ↗</a>
+            </div>
+          </article>
+
+          <!-- Upcoming: Churn ML -->
+          <article class="card" data-category="roadmap data-sql">
+            <div class="card-meta">
+              <span class="cat-label">Applied ML · Deploying Dec '26</span>
+              <span class="badge-soon">In Pipeline</span>
+            </div>
+            <h3>Customer Churn Prediction App</h3>
+            <p>
+              End-to-end Scikit-Learn pipeline with class-imbalance handling, SHAP explanations, pytest unit tests, FastAPI inference endpoint, and a live Streamlit preview.
+            </p>
+            <div class="tags">
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Docker</span>
+            </div>
+            <div class="card-actions">
+              <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-muted);">Scheduled: Dec 2026</span>
+            </div>
+          </article>
+
+          <!-- Upcoming: RAG Assistant -->
+          <article class="card" data-category="roadmap">
+            <div class="card-meta">
+              <span class="cat-label">AI Engineering · Deploying Jan '27</span>
+              <span class="badge-soon">In Pipeline</span>
+            </div>
+            <h3>DocuMind — RAG Knowledge Assistant</h3>
+            <p>
+              Document Q&amp;A system using embeddings, hybrid vector retrieval, exact source citations, and automated faithfulness evaluation served behind a clean web UI.
+            </p>
+            <div class="tags">
+              <span class="tag">LLM APIs</span>
+              <span class="tag">RAG</span>
+              <span class="tag">Vector DB</span>
+              <span class="tag">FastAPI</span>
+            </div>
+            <div class="card-actions">
+              <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-muted);">Scheduled: Jan 2027</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Preview Modal -->
+  <div class="modal-backdrop" id="preview-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-panel">
+      <div class="modal-top">
+        <div>
+          <span class="eyebrow" data-modal-eyebrow></span>
+          <h2 class="section-title" id="modal-title" data-modal-title></h2>
+        </div>
+        <button class="modal-close" data-modal-close aria-label="Close preview">×</button>
+      </div>
+      <p data-modal-summary style="color: var(--ink-muted);"></p>
+      <ul class="modal-list" data-modal-list></ul>
+      <div class="code-window" style="margin-bottom: 20px;">
+        <div class="code-bar"><span>Preview Snippet</span></div>
+        <pre class="code-body" data-modal-code></pre>
+      </div>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-modal-repo>Open on GitHub ↗</a>
+        <button class="btn btn-secondary btn-sm" data-modal-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Hammad Rizvi · <a href="https://hammadrizvi.tech" style="color: var(--accent);">hammadrizvi.tech</a></p>
+      <div class="footer-links">
+        <a href="https://github.com/hammadrizvi-dev" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hammadrizvi-dev" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:Hammadrizvi346@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
