@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume / CV — Hammad Rizvi</title>
+  <meta name="description" content="ATS-friendly Resume & CV of Hammad Rizvi — B.Tech CSD (5th Sem), WCTM Farrukhnagar | Data Science, SQL, AI Engineering & Full-Stack.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .resume-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 28px 0 20px;
+    }
+    .resume-sheet {
+      background: #ffffff;
+      color: #161614;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius);
+      padding: 40px 44px;
+      max-width: 860px;
+      margin: 0 auto 56px;
+      box-shadow: var(--shadow);
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .resume-header {
+      border-bottom: 2px solid #161614;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .resume-header h1 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: #161614;
+    }
+    .resume-role {
+      font-size: 0.95rem;
+      color: #c84b31;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+    .resume-contact {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: #44423d;
+      text-align: right;
+      line-height: 1.7;
+    }
+    .resume-contact a {
+      color: #161614;
+      text-decoration: underline;
+    }
+    .r-section {
+      margin-bottom: 18px;
+    }
+    .r-section h2 {
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #161614;
+      border-bottom: 1px solid #d5cfc2;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+    .r-item {
+      margin-bottom: 12px;
+    }
+    .r-item-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .r-item-head strong {
+      font-size: 0.98rem;
+      color: #161614;
+    }
+    .r-item-head span {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: #5a574f;
+    }
+    .r-list {
+      margin: 5px 0 0 18px;
+      color: #2f2e2a;
+    }
+    .r-list li {
+      margin-bottom: 3px;
+    }
+    .r-skills-grid {
+      display: grid;
+      gap: 5px;
+      color: #2f2e2a;
+    }
+    @media (max-width: 640px) {
+      .resume-sheet { padding: 24px 20px; }
+      .resume-contact { text-align: left; }
+    }
+    @media print {
+      body { background: #ffffff !important; }
+      body::before, .site-nav, .resume-toolbar, footer { display: none !important; }
+      .container { max-width: 100%; padding: 0; }
+      .resume-sheet {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-dot"></span>hammadrizvi<span>.tech</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="resume.html" class="active">Resume</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle title="Toggle Light/Dark Theme" aria-label="Toggle Theme">☾</button>
+        <button onclick="window.print()" class="btn btn-primary btn-sm">Download / Print PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="resume-toolbar">
+      <div>
+        <span class="eyebrow" style="margin-bottom: 2px;">ATS-Friendly 1-Page CV</span>
+        <p style="color: var(--ink-muted); font-size: 0.9rem;">Click "Save as PDF" in the print dialog for a clean 1-page PDF copy.</p>
+      </div>
+      <div style="display: flex; gap: 10px;">
+        <button onclick="window.print()" class="btn btn-primary btn-sm">Save / Print PDF</button>
+        <a href="mailto:Hammadrizvi346@gmail.com" class="btn btn-secondary btn-sm">Email Me</a>
+      </div>
+    </div>
+
+    <article class="resume-sheet">
+      <header class="resume-header">
+        <div>
+          <h1>Hammad Rizvi</h1>
+          <div class="resume-role">Data Science · SQL · AI Engineering · Full-Stack Web</div>
+        </div>
+        <div class="resume-contact">
+          <div>Meerut / Gurugram, India · <a href="mailto:Hammadrizvi346@gmail.com">Hammadrizvi346@gmail.com</a></div>
+          <div>
+            <a href="https://hammadrizvi.tech">hammadrizvi.tech</a> ·
+            <a href="https://github.com/hammadrizvi-dev">github.com/hammadrizvi-dev</a> ·
+            <a href="https://www.linkedin.com/in/hammadrizvi-dev">linkedin.com/in/hammadrizvi-dev</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="r-section">
+        <h2>Summary</h2>
+        <p>
+          Pre-final year B.Tech Computer Science &amp; Design (5th Sem) undergraduate building verified Data Science, SQL analytics, and full-stack web projects. Combines strong C/Java/Python foundations with automated testing (GitHub Actions CI) and clean web delivery. Actively seeking 2027 internships in Data Science, Analytics, AI Engineering, or Software Development.
+        </p>
+      </section>
+
+      <section class="r-section">
+        <h2>Education</h2>
+        <div class="r-item">
+          <div class="r-item-head">
+            <strong>World College of Technology &amp; Management (WCTM), Farrukhnagar (MDU Rohtak)</strong>
+            <span>2024 – 2028 (5th Sem · Entering 6th Sem Feb 2027)</span>
+          </div>
+          <div style="color: #44423d;">B.Tech in Computer Science &amp; Design (CSD) · Relevant Coursework: DBMS, Data Structures &amp; Algorithms (DAA), Computer Networks, OOPs (Java/C), Statistics</div>
+        </div>
+      </section>
+
+      <section class="r-section">
+        <h2>Technical Skills</h2>
+        <div class="r-skills-grid">
+          <div><strong>Languages:</strong> Python, SQL (MySQL, SQLite), Java (OOPs), C, JavaScript (ES6+), HTML5, CSS3</div>
+          <div><strong>Data &amp; Analytics:</strong> Pandas, NumPy, Matplotlib, Seaborn, EDA, Applied Statistics, Scikit-Learn (Learning)</div>
+          <div><strong>Web &amp; Backend:</strong> Node.js, Express.js, MongoDB, Socket.IO, REST APIs, FastAPI / Streamlit (In Progress)</div>
+          <div><strong>Tools &amp; DevOps:</strong> Git, GitHub, GitHub Actions (CI/CD), GitHub Pages, JupyterLab, VS Code, Remotion</div>
+        </div>
+      </section>
+
+      <section class="r-section">
+        <h2>Featured Projects</h2>
+
+        <div class="r-item">
+          <div class="r-item-head">
+            <strong>SQL-Journey — Automated MySQL &amp; SQLite Analytics Suite</strong>
+            <span>github.com/hammadrizvi-dev/SQL-Journey</span>
+          </div>
+          <ul class="r-list">
+            <li>Authored 28+ structured SQL queries covering Joins, Aggregations, Self-Joins, CTEs (<code>WITH</code>), Subqueries, and <code>NOT EXISTS</code> business patterns across a 4-table relational schema.</li>
+            <li>Built a GitHub Actions CI pipeline (<code>sql-ci.yml</code>) that executes all SQLite schemas and solutions automatically on every push to guarantee zero query errors.</li>
+          </ul>
+        </div>
+
+        <div class="r-item">
+          <div class="r-item-head">
+            <strong>Data-Science-Journey — Student Performance EDA &amp; IPL Analytics</strong>
+            <span>github.com/hammadrizvi-dev/Data-Science-Journey</span>
+          </div>
+          <ul class="r-list">
+            <li>Executed a 4-stage Student Performance Analysis pipeline (cleaning, outlier profiling, demographic grouping) uncovering a 10–15% score lift linked to test-prep completion.</li>
+            <li>Built reproducible Matplotlib &amp; Seaborn notebooks analyzing IPL ball-by-ball datasets with zero hardcoded paths.</li>
+          </ul>
+        </div>
+
+        <div class="r-item">
+          <div class="r-item-head">
+            <strong>Chatify — Real-Time Messaging Web Application (MERN + Socket.IO)</strong>
+            <span>github.com/hammadrizvi-dev/Chatify</span>
+          </div>
+          <ul class="r-list">
+            <li>Engineered a full-stack real-time chat app using Node.js, Express, MongoDB, and Socket.IO with instant room messaging, JWT authentication, and media upload middleware.</li>
+          </ul>
+        </div>
+
+        <div class="r-item">
+          <div class="r-item-head">
+            <strong>hammadrizvi.tech — Editorial Developer Portfolio</strong>
+            <span>https://hammadrizvi.tech</span>
+          </div>
+          <ul class="r-list">
+            <li>Designed and deployed a custom-domain portfolio with interactive project preview modals, live GitHub API telemetry, tabbed code previews, and light/dark theme switching.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="r-section" style="margin-bottom: 0;">
+        <h2>Hackathons &amp; Builder Experience</h2>
+        <ul class="r-list">
+          <li><strong>All-India / College National Hackathon (Team):</strong> Collaborated on rapid problem framing, prototyping, and pitching under tight time constraints.</li>
+          <li><strong>Unity &amp; Online Tech Hackathons (Solo &amp; Team):</strong> Participated across multiple online engineering &amp; Unity hackathons, shipping working prototypes from scratch.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Hammad Rizvi · <a href="https://hammadrizvi.tech" style="color: var(--accent);">hammadrizvi.tech</a></p>
+      <div class="footer-links">
+        <a href="https://github.com/hammadrizvi-dev" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hammadrizvi-dev" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/Hammadrizvi_dev" target="_blank" rel="noopener">X</a>
+        <a href="https://instagram.com/hammadrizvi_dev" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
